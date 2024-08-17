@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: white;
 }
 
 .App-logo {
@@ -7,20 +8,33 @@
   pointer-events: none;
 }
 
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+.App-main-header {
+  background-color: #008ecc;
+  max-width: auto; /* Optional: Set a maximum width for large screens */
+  min-height: 4vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(3px + 1.5vmin);
+  color: white;
+}
+
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #008ecc;
+  min-height: 4vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(4px + 1.5vmin);
   color: white;
 }
 
@@ -30,9 +44,141 @@
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform:none;
   }
   to {
-    transform: rotate(360deg);
+    transform:none;
   }
 }
+
+.App-prediction {
+  text-align: center;
+  align-items: center;
+  background-color:skyblue;
+  border-style: '1px solid black';
+  transform-origin: center;
+  color: #3c424e;
+}
+
+.main-button {
+  border: '1px solid black';
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #3c424e;
+  min-height: 3vh;
+  min-width: 10vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(3px + 1.2vmin);
+  color: white;
+}
+
+._button {
+  border: '1px solid black';
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #3c424e;
+  min-height: 4vh;
+  min-width: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(3px + 1.5vmin);
+  color: white
+}
+
+.predict-button {
+  border: '1px solid black';
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #3c424e;
+  min-height: 4vh;
+  min-width: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(3px + 1.5vmin);
+  color: white;
+}
+.predicted-value {
+  border: '1px solid black';
+  justify-content: center;
+  text-align: center;
+  background-color: #3c424e;
+  min-height: 4vh;
+  height: 50px;
+  width: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(3px + 1.5vmin);
+  color: white;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f4f8; /* Light background for contrast */
+  width: 100%; /* Ensure the container takes full width */
+  box-sizing: border-box; /* Include padding in width calculations */
+  margin: 0 auto; /* Center the table horizontally */
+}
+
+.ai-table {
+  width: auto;
+  max-width: auto; /* Optional: Set a maximum width for large screens */
+  border-collapse: collapse;
+  box-shadow: 0px 8px 20px rgba(0, 191, 255, 1); /* AI-inspired shadow */
+  background-color: #ffffff;
+  border-radius: 12px; /* Rounded corners for a modern look */
+  overflow: hidden
+}
+
+.ai-table th, .ai-table td {
+  padding: 15px 20px;
+  text-align: left;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0; /* Light border for separation */
+}
+
+.ai-table th {
+  background-color: #00bfff; /* Deep Sky Blue header */
+  color: white;
+  font-weight: bold;
+  white-space: nowrap; /* Prevent text from wrapping */
+  word-wrap: break-word; /* Ensure long words break and wrap */
+}
+
+.ai-table tr:hover {
+  background-color: #d8e8f8; /* Subtle hover effect for rows */
+  transition: background-color 0.3s ease;
+}
+
+.ai-table td {
+  color: #555; /* Slightly softer text color */
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.chart-container {
+  width: 80%;
+  margin: 20px 0;
+}
+
+h2 {
+  color: #008ecc;
+}
+
