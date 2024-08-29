@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import LRegression from './Predictions/Regression.js'
 import { Link } from 'react-router-dom';
-import Dashboard from './Predictions/Dashboard.js'
+import Dashboard from './Charts/Dashboard.js'
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState('')
@@ -15,7 +15,7 @@ const Home = () => {
       default:
         return <div>
           <h1 style={{
-            backgroundColor: "skyblue", minHeight: "85vh",
+            backgroundColor: "#78abc1", minHeight: "85vh",
             fontSize: "calc(3px + 1.5vmin)", display: "flex", color: "white"
           }}>Default section
             <br />
@@ -70,7 +70,7 @@ const Home = () => {
 
         >Dashboard
         </button>
-
+        
         <button style={{
           padding: "10px 20px",
           fontSize: "1rem",
@@ -89,7 +89,7 @@ const Home = () => {
 
           onClick={() => setActiveTab()}
 
-        ><Link to="/">Back to main page</Link>
+        ><Link to="/">Back To Main Page</Link>
         </button>
       </div>
       <div>{Home_Tab()}</div>

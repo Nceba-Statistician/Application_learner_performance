@@ -133,7 +133,7 @@ const Home = () => {
 
           onClick={() => setActiveTab()}
 
-        ><Link to="/">Back to main page</Link>
+        ><Link to="/">Back To Main Page</Link>
         </button>
       </div>
       <div>{DataConfig()}</div>

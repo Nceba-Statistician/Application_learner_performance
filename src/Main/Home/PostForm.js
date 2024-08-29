@@ -217,12 +217,12 @@ class PostForm extends Component {
       </form>
       {
         submissionStatus === "success" && (
-          <h1 className='predict-button'>Record with ID {this.state.StudentID} submitted successfully!</h1>
+          <h1 className='Response-button'>Record with ID {this.state.StudentID} submitted successfully!</h1>
         )
       }
       {
         submissionStatus === "error" && (
-          <h1 className='predict-button'>Failed to submit records, double check your entered records and try again!</h1>
+          <h1 className='response-button'>Failed to submit records, double check your entered records and try again!</h1>
         )
       }
       </div>

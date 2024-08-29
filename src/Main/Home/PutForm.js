@@ -204,7 +204,7 @@ export class PutForm extends Component {
       }
       {
         submissionStatus === "error" && (
-          <h1 className='predict-button'>Failed to update records, double check your entered records and try again!</h1>
+          <h1 className='response-button'>Failed to update records, double check your entered records and try again!</h1>
         )
       }
       </div>

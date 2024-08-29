@@ -152,7 +152,7 @@ const LRegression = () => {
           Click to predict GPA
           </button >
       </form>
-      <h1 className='predict-button'>{prediction}</h1>
+      <h1 className='response-button'>{prediction}</h1>
     </div>
   );
 }
